@@ -11,7 +11,14 @@ I am Su Qun, currently a second-year PhD student at the Artificial Intelligence 
 
 Welcome friends and colleagues from all fields for communication and collaboration!
 
-**Publications**
+---
+permalink: /
+title: "Publications"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
 1. **Qun Su**, Kai Zhu, Qiaolin Gou, Jintu Zhang, Renling Hu, Yurong Li, Yongze Wang, Hui Zhang, Ziyi You, Linlong Jiang, Yu Kang, Jike Wang, Chang-Yu Hsieh, Tingjun Hou. A Scalable and Quantum-Accurate Foundation Model for Biomolecular Force Field via Linearly Tensorized Quadrangle Attention(https://arxiv.org/abs/2507.00884)
 2. **Qun Su**, Jike Wang, Qiaolin Gou, Renling Hu ..Robust protein–ligand interaction modeling through integrating physical laws and geometric knowledge for absolute binding free energy calculation (Chemical Science)
 3. **Qun Su**, Hui Zhang, Qiaolin Gou, Huiyong Sun, Meijing Fang ..LumiCharge: Spherical Harmonic Convolutional Networks for Atomic Charge Prediction in Drug Discovery (The Journal of Physical Chemistry Letters)
