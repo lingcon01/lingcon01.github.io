@@ -17,7 +17,7 @@ Welcome friends and colleagues from all fields for communication and collaborati
 
 # Publications
 
-1. **Qun Su**, Kai Zhu, Qiaolin Gou, Jintu Zhang, Renling Hu, Yurong Li, Yongze Wang, Hui Zhang, Ziyi You, Linlong Jiang, Yu Kang, Jike Wang, Chang-Yu Hsieh, Tingjun Hou. *A Scalable and Quantum-Accurate Foundation Model for Biomolecular Force Field via Linearly Tensorized Quadrangle Attention*. [arXiv:2507.00884](https://arxiv.org/abs/2507.00884) (***Nature Communications***, Second Revised).
+1. **Qun Su**, Kai Zhu, Qiaolin Gou, Jintu Zhang, Renling Hu, Yurong Li, Yongze Wang, Hui Zhang, Ziyi You, Linlong Jiang, Yu Kang, Jike Wang, Chang-Yu Hsieh, Tingjun Hou. *A Scalable and Quantum-Accurate Foundation Model for Biomolecular Force Field via Linearly Tensorized Quadrangle Attention*. [arXiv:2507.00884](https://arxiv.org/abs/2507.00884) (***Nature Communications***, Accepted).
 2. **Qun Su**, Qiaolin Gou, Hui Zhang, Jike Wang, Huiyong Sun, Renling Hu, Rui Qin, Huanxiang Liu*, Tingjun Hou*, Yu Kang*. *LaMGen: LLM-Based 3D Molecular Generation for Multi-Target Drug Design*. (***Nature Communications***, Second Revised).
 3. Hui Zhang#, Xujun Zhang#, **Qun Su**#, Yangyang Zheng, Linlong Jiang, Kai Zhu, Qiaolin Gou, et al. *MetalloDock: Decoding Metalloprotein–Ligand Interactions via Physics-Aware Deep Learning for Metalloprotein Drug Discovery*. ***Journal of the American Chemical Society*** (2026).
 4. **Qun Su**, Jike Wang, Qiaolin Gou, Renling Hu, et al. *Robust protein–ligand interaction modeling through integrating physical laws and geometric knowledge for absolute binding free energy calculation*. ***Chemical Science***.
