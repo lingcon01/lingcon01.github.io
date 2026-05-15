@@ -3,83 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Su Qun | Home</title>
+    <title>Su Qun | Zhejiang University</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-main: #1d1d1f; /* Apple 同款深灰，比纯黑更高级 */
+            --text-muted: #86868b;
+            --accent-color: #0066cc; /* 专业学术蓝 */
+            --border-light: #f5f5f7;
+            --max-width: 820px;
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            letter-spacing: -0.01em;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 100px 30px;
+        }
+
+        /* 导航栏：极简居中 */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.8);
+            backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid var(--border-light);
+            z-index: 1000;
+            text-align: center;
+            padding: 15px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 0.9rem;
+            margin: 0 20px;
+            font-weight: 500;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+        nav a:hover { opacity: 1; }
+
+        /* 头部介绍 */
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 80px;
+        }
+        .hero-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* 极简通常用圆形或带大圆角的方形 */
+            object-fit: cover;
+            flex-shrink: 0;
+            background-color: #f5f5f7;
+        }
+        .hero-text h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            letter-spacing: -0.03em;
+        }
+        .hero-text p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin: 5px 0;
+            font-weight: 400;
+        }
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .social-icons a {
+            color: var(--text-main);
+            font-size: 1.2rem;
+            transition: color 0.2s;
+        }
+        .social-icons a:hover { color: var(--accent-color); }
+
+        /* 通用章节 */
+        section { margin-bottom: 80px; }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            letter-spacing: -0.02em;
+        }
+
+        .bio-text {
+            font-size: 1.1rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+        .bio-text strong { font-weight: 600; color: #000; }
+
+        /* 论文列表：极简风格不带边框 */
+        .pub-item {
+            margin-bottom: 35px;
+            position: relative;
+        }
+        .pub-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 6px;
+            display: block;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .pub-title:hover { color: var(--accent-color); }
+        .pub-authors {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+        .pub-venue {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .me { color: var(--text-main); font-weight: 700; text-decoration: underline; }
+
+        /* 系统展示：轻量化卡片 */
+        .system-card {
+            background: #fafafa;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .system-card:hover {
+            background: #fff;
+            border-color: var(--border-light);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .system-card h3 { margin-top: 0; font-size: 1.3rem; color: var(--accent-color); }
+        .system-card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0; }
+
+        footer {
+            padding-top: 50px;
+            border-top: 1px solid var(--border-light);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        @media (max-width: 650px) {
+            .hero { flex-direction: column; text-align: center; }
+            .container { padding-top: 60px; }
+            h1 { font-size: 2.2rem; }
+        }
+    </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <a href="index.html" class="active">Home</a>
-        <a href="publications.html">Publications</a>
-        <a href="projects.html">Systems</a>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#systems">Systems</a>
+        <a href="mailto:your_email@zju.edu.cn">Contact</a>
     </nav>
 
     <div class="container">
-        <header class="profile-header">
-            <img src="avatar.jpg" alt="Su Qun" class="profile-photo" onerror="this.src='https://via.placeholder.com/160?text=Qun+Su'">
-            <div class="profile-info">
+        <header class="hero">
+            <img src="avatar.jpg" alt="Su Qun" class="hero-photo" onerror="this.src='https://via.placeholder.com/150/f5f5f7/86868b?text=Su+Qun'">
+            <div class="hero-text">
                 <h1>Su Qun (苏群)</h1>
-                <p><i class="fas fa-graduation-cap"></i> 3rd Year Ph.D. Student @ Zhejiang University</p>
-                <p><i class="fas fa-microscope"></i> AI for Drug Discovery (AIDD) Laboratory</p>
-                <p><i class="fas fa-user-friends"></i> Advised by <strong>Prof. Tingjun Hou</strong></p>
-                
-                <div class="contact-links">
-                    <a href="mailto:your_email@zju.edu.cn"><i class="fas fa-envelope"></i> Email</a>
-                    <a href="https://github.com/lingcon01" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="#" target="_blank"><i class="fas fa-book-open"></i> Google Scholar</a>
+                <p>Ph.D. Student in AIDD @ Zhejiang University</p>
+                <p>Chemistry & Software Engineering Background</p>
+                <div class="social-icons">
+                    <a href="mailto:your_email@zju.edu.cn"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/lingcon01" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-graduation-cap"></i></a>
                 </div>
             </div>
         </header>
 
-        <section class="text-justify">
+        <section id="about" class="bio-text">
             <h2>About me</h2>
-            <p>I am <strong>Su Qun</strong>, currently a third-year PhD student at the Artificial Intelligence for Drug Discovery Laboratory, Zhejiang University, under the supervision of <strong>Professor Tingjun Hou</strong>.</p>
-            <p>My research primarily focuses on the development and application of <strong>Deep Potential</strong>, combined with drug-related <strong>molecular docking</strong>, <strong>binding free energy prediction</strong>, and <strong>molecular generation</strong>. I am dedicated to advancing innovations and practical applications of artificial intelligence technologies in drug discovery.</p>
-            <p>During my undergraduate studies, I earned dual bachelor's degrees in <strong>Chemistry</strong> and <strong>Software Engineering</strong> from Sichuan University, providing me with an interdisciplinary background that effectively bridges computational methods and medicinal chemistry research.</p>
-            <p style="font-weight: 500; color: var(--primary-color); margin-top: 20px;">
-                <i class="far fa-lightbulb"></i> Welcome friends and colleagues from all fields for communication and collaboration!
-            </p>
+            <p>I am a third-year PhD student at the <strong>Artificial Intelligence for Drug Discovery (AIDD) Laboratory</strong>, Zhejiang University, supervised by <strong>Prof. Tingjun Hou</strong>. My work resides at the intersection of machine learning and quantum chemistry.</p>
+            <p>My research focuses on <strong>Deep Potential</strong> frameworks, specifically the <strong>Quantum Chemical Information Injection (QCII)</strong> mechanism. I aim to bridge microscopic electronic states with macroscopic pharmacological properties, empowering the entire drug discovery pipeline—from 3D molecular generation to binding free energy prediction.</p>
         </section>
 
-        <section>
-            <h2>Education</h2>
-            <div class="edu-item">
-                <div class="edu-info">
-                    <strong>Zhejiang University</strong>
-                    <span>Ph.D. in Pharmaceutical Sciences (AIDD)</span>
-                </div>
-                <div class="edu-year">2023 - Present</div>
+        <section id="systems">
+            <h2>Featured Frameworks</h2>
+            <div class="system-card">
+                <h3>LiTENexus Ecosystem</h3>
+                <p>An end-to-end virtual drug discovery system built on the LiTEN-Base operator. It provides quantum-accurate molecular representations to empower generation, screening, and profiling tasks.</p>
             </div>
-            <div class="edu-item">
-                <div class="edu-info">
-                    <strong>Sichuan University</strong>
-                    <span>Dual B.S. in Chemistry & Software Engineering</span>
-                </div>
-                <div class="edu-year">2019 - 2023</div>
+            <div class="system-card">
+                <h3>LaMGen</h3>
+                <p>An LLM-based 3D molecular generation framework that aligns latent language space with physical 3D coordinates for multi-target drug design.</p>
             </div>
         </section>
 
-        <section>
+        <section id="publications">
             <h2>Selected Publications</h2>
-            <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 20px;">
-                Here are a few selected works. For a complete list of 13+ papers, please visit the <a href="publications.html" style="color: var(--primary-color); font-weight: 600;">Publications</a> page.
-            </p>
-            <ul class="pub-list">
-                <li class="pub-item">
-                    <div class="pub-title">A Scalable and Quantum-Accurate Foundation Model for Biomolecular Force Field via Linearly Tensorized Quadrangle Attention</div>
-                    <div class="pub-authors"><span class="me">Qun Su</span>, Kai Zhu, Qiaolin Gou, Jintu Zhang, Renling Hu, Yurong Li, Yongze Wang, Hui Zhang, Ziyi You, Linlong Jiang, Yu Kang, Jike Wang, Chang-Yu Hsieh, Tingjun Hou.</div>
-                    <div class="pub-venue">Nature Communications (2026)</div>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">LaMGen: LLM-Based 3D Molecular Generation for Multi-Target Drug Design</div>
-                    <div class="pub-authors"><span class="me">Qun Su</span>, Qiaolin Gou, Hui Zhang, Jike Wang, Huiyong Sun, Renling Hu, Rui Qin, Huanxiang Liu*, Tingjun Hou*, Yu Kang*.</div>
-                    <div class="pub-venue">Nature Communications (2026)</div>
-                </li>
-            </ul>
+            
+            <div class="pub-item">
+                <a href="#" class="pub-title">A Scalable and Quantum-Accurate Foundation Model for Biomolecular Force Field via Linearly Tensorized Quadrangle Attention</a>
+                <div class="pub-authors"><span class="me">Qun Su</span>, Kai Zhu, Qiaolin Gou, Jintu Zhang, et al.</div>
+                <div class="pub-venue">Nature Communications (2026)</div>
+            </div>
+
+            <div class="pub-item">
+                <a href="#" class="pub-title">LaMGen: LLM-Based 3D Molecular Generation for Multi-Target Drug Design</a>
+                <div class="pub-authors"><span class="me">Qun Su</span>, Qiaolin Gou, Hui Zhang, Jike Wang, et al.</div>
+                <div class="pub-venue">Nature Communications (2026)</div>
+            </div>
+
+            <div class="pub-item">
+                <a href="#" class="pub-title">MetalloDock: Decoding Metalloprotein–Ligand Interactions via Physics-Aware Deep Learning</a>
+                <div class="pub-authors">Hui Zhang#, Xujun Zhang#, <span class="me">Qun Su#</span>, et al.</div>
+                <div class="pub-venue">Journal of the American Chemical Society (2026)</div>
+            </div>
+
+            <div class="pub-item">
+                <a href="#" class="pub-title">Robust protein–ligand interaction modeling through integrating physical laws and geometric knowledge</a>
+                <div class="pub-authors"><span class="me">Qun Su</span>, Jike Wang, Qiaolin Gou, et al.</div>
+                <div class="pub-venue">Chemical Science (2025)</div>
+            </div>
+
+            <p style="color: var(--text-muted); font-size: 0.9rem;">+ 9 other high-impact publications including NSR, NMI, and JPC Letters.</p>
         </section>
+
+        <footer>
+            &copy; 2026 Su Qun | Built with Pure HTML/CSS
+        </footer>
     </div>
 
-    <footer>&copy; 2026 Su Qun. All rights reserved.</footer>
 </body>
 </html>
