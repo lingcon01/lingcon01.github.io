@@ -19,9 +19,6 @@
     <img src="https://img.shields.io/github/stars/lingcon01?style=for-the-badge&color=FFC371&labelColor=141321" alt="星标" />
   </p>
 
-  <p>
-    <img src="https://profile-counter.glitch.me/{lingcon01}/count.svg" alt="访问计数器" />
-  </p>
 </div>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2" />
@@ -31,33 +28,27 @@
   About Me
 </h2>
 
-<table border="0" cellspacing="0" cellpadding="0" width="100%">
-  <tr>
-    <td width="33%" valign="top">
-
-> ### 🧠 Academic Background
->
-> 🎓 **3rd-year PhD student** at AIDD Lab, Zhejiang University  
-> 👨‍🔬 Supervised by **Prof. Tingjun Hou** > 🎓 Dual BS in **Chemistry & Software Eng** from Sichuan University  
-> 🌐 Bridging computational methods and medicinal chemistry
-
+<table border="0" cellspacing="0" cellpadding="15" width="100%">
+  <tr valign="top">
+    <td width="33%" style="background-color: #f8f9fa; border-radius: 8px;">
+      <h3 style="margin-top: 0;">🧠 Academic Background</h3>
+      <p>🎓 <strong>3rd-year PhD student</strong> at AIDD Lab, Zhejiang University</p>
+      <p>👨‍🔬 Supervised by <strong>Prof. Tingjun Hou</strong></p>
+      <p>🎓 Dual BS in <strong>Chemistry & Software Eng</strong> from Sichuan University</p>
+      <p>🌐 Bridging computational methods and medicinal chemistry</p>
     </td>
-    <td width="33%" valign="top">
-
-> ### 🧪 Research Focus
->
-> 🔬 Development and application of **Deep Potential** > 🧬 **Molecular Generation** for drug discovery  
-> 🧩 Drug-related **Molecular Docking** > 📊 **Binding Free Energy** prediction  
-> ⚡ Advancing AI applications in real-world pipelines
-
+    <td width="33%" style="background-color: #f8f9fa; border-radius: 8px;">
+      <h3 style="margin-top: 0;">🧪 Research Focus</h3>
+      <p>🔬 Development and application of <strong>Deep Potential</strong></p>
+      <p>🧬 <strong>Molecular Generation</strong> for drug discovery</p>
+      <p>🧩 Drug-related <strong>Molecular Docking</strong></p>
+      <p>📊 <strong>Binding Free Energy</strong> prediction</p>
+      <p>⚡ Advancing AI applications in real-world pipelines</p>
     </td>
-    <td width="34%" valign="top">
-
-> ### 💻 Vision & Goals
->
-> 🚀 Dedicated to practical applications of **AI technologies** in drug discovery  
-> 🤝 Welcome friends and colleagues from all fields for **communication and collaboration!**
-
+    <td width="34%" style="background-color: #f8f9fa; border-radius: 8px;">
+      <h3 style="margin-top: 0;">💻 Vision & Goals</h3>
+      <p>🚀 Dedicated to practical applications of <strong>AI technologies</strong> in drug discovery</p>
+      <p>🤝 Welcome friends and colleagues from all fields for <strong>communication and collaboration!</strong></p>
     </td>
   </tr>
 </table>
