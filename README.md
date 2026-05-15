@@ -1,7 +1,9 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF5F6D,100:FFC371&height=250&section=header&text=Su-Qun&fontSize=90&fontAlignY=35&animation=fadeIn&fontColor=white&desc=AI%20for%20Drug%20Discovery&descAlignY=55" />
   
-  # 👋 Hello，here is Su Qun
+  👋 Hello，here is Su Qun
+  
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2000&pause=500&color=2C9CDF&center=true&vCenter=true&width=800&lines=PhD+Student+%40+Zhejiang+University;Focus+on+Deep+Potential+%26+Molecular+Generation;Bridging+Computation+and+Medicinal+Chemistry;Welcome+friends+for+communication+and+collaboration!)](https://git.io/typing-svg)
 
   <p align="center">
     <a href="https://github.com/lingcon01"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
