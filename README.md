@@ -18,6 +18,7 @@
     <img src="https://img.shields.io/github/followers/lingcon01?style=for-the-badge&color=FF5F6D&labelColor=141321" alt="关注者" />
     <img src="https://img.shields.io/github/stars/lingcon01?style=for-the-badge&color=FFC371&labelColor=141321" alt="星标" />
   </p>
+
   <p>
     <img src="https://profile-counter.glitch.me/{lingcon01}/count.svg" alt="访问计数器" />
   </p>
@@ -31,17 +32,17 @@
 </h2>
 
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
-<tr>
-<td width="34%" valign="top">
+  <tr>
+    <td width="33%" valign="top">
 
 > ### 🧠 Academic Background
 >
 > 🎓 **3rd-year PhD student** at AIDD Lab, Zhejiang University  
-> 👨‍🔬 Under the supervision of **Prof. Tingjun Hou** > 🎓 Dual BS in **Chemistry & Software Engineering** from Sichuan University  
+> 👨‍🔬 Supervised by **Prof. Tingjun Hou** > 🎓 Dual BS in **Chemistry & Software Eng** from Sichuan University  
 > 🌐 Bridging computational methods and medicinal chemistry
 
-</td>
-<td width="34%" valign="top">
+    </td>
+    <td width="33%" valign="top">
 
 > ### 🧪 Research Focus
 >
@@ -49,16 +50,16 @@
 > 🧩 Drug-related **Molecular Docking** > 📊 **Binding Free Energy** prediction  
 > ⚡ Advancing AI applications in real-world pipelines
 
-</td>
-<td width="35%" valign="top">
+    </td>
+    <td width="34%" valign="top">
 
 > ### 💻 Vision & Goals
 >
 > 🚀 Dedicated to practical applications of **AI technologies** in drug discovery  
 > 🤝 Welcome friends and colleagues from all fields for **communication and collaboration!**
 
-</td>
-</tr>
+    </td>
+  </tr>
 </table>
 
 <div align="center">
@@ -128,10 +129,12 @@
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg" width="100%">
   </picture>
 
+  <br><br>
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=lingcon01&theme=radical" width="100%" />
 </div>
 
 <div align="center">
+  <br>
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=FF9190&center=true&vCenter=true&random=false&width=800&height=80&lines=%22Science+is+a+way+of+thinking+much+more+than+it+is+a+body+of+knowledge.%22;%22Bridging+quantum+mechanics+and+machine+learning+to+decode+the+secrets+of+life.%22" alt="编程名言" />
 </div>
 
